@@ -42,7 +42,7 @@ class Song
   end
   
   def self.new_from_filename(mp3_file)
-    
+    s = self.new
   end
 
   def self.all

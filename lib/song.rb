@@ -26,7 +26,7 @@ class Song
   end
   
   def self.find_or_create_by_name(name_of_song)
-    found_song = self.
+    found_song = self.all.find 
   end
 
   def self.all

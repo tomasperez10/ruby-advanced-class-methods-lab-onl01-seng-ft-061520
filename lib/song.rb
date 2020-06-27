@@ -52,7 +52,7 @@ class Song
   end
   
   def self.create_from_filename(mp3_file)
-    data = filename.split(/\W/)
+    data = mp3_file.split(/\W/)
     artist_name = data[0]
     title = data[3..-2].join(" ")
     song = self.new

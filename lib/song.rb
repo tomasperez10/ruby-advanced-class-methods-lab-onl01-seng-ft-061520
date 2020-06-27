@@ -36,6 +36,8 @@ class Song
       found_song
     end
   end
+  
+  def self.
 
   def self.all
     @@all

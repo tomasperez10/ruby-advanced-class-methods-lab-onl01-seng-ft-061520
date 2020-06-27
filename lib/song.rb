@@ -25,7 +25,7 @@ class Song
     self.all.find {|i| i.name == name_of_song}
   end
   
-  def self.
+  def self.find_or_
 
   def self.all
     @@all

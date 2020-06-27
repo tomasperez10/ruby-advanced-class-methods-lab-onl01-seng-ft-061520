@@ -51,6 +51,7 @@ class Song
   def self.create_from_filename(mp3_file)
     s = self.new
     s.name = mp3_file(/[^a-zA-Z\s]|\s-s\/)[1]
+    s.artist_name = mp3_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
   end
 
   def self.all

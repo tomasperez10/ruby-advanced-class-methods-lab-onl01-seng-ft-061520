@@ -8,7 +8,7 @@ class Song
     s
   end
   
-  def self.
+  def self.create_by_name()
 
   def self.all
     @@all

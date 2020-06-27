@@ -43,15 +43,15 @@ class Song
   
   def self.new_from_filename(mp3_file)
     s = self.new
-    s.name = mp3_file.split(/[^a-zA-Z\s]|\s-s\/)[0]
-    s.artist_name = mp3_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    s.name = mp3_file.split(/[^a-zA-Z]|\s-s\/)[0]
+    s.artist_name = mp3_file.split(/[^a-zA-Z]|\s-\s/)[0]
     s
   end
   
   def self.create_from_filename(mp3_file)
     s = self.new
-    s.name = mp3_file(/[^a-zA-Z\s]|\s-s\/)[1]
-    s.artist_name = mp3_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    s.name = mp3_file(/[^a-zA-Z]|\s-s\/)[1]
+    s.artist_name = mp3_file.split(/[^a-zA-Z]|\s-\s/)[0]
     s.save
     s
   end

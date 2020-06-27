@@ -50,7 +50,7 @@ class Song
   
   def self.create_from_filename(mp3_file)
     s = self.new
-    s.name = mp3_file
+    s.name = mp3_file(/[^a-zA-Z\s]|\s-s\/)[1]
   end
 
   def self.all

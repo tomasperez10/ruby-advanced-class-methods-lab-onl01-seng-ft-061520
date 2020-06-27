@@ -43,7 +43,7 @@ class Song
   
   def self.new_from_filename(mp3_file)
     s = self.new
-    s.name = mp3_file.split(/)
+    s.name = mp3_file.split(/[])
   end
 
   def self.all

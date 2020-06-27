@@ -7,6 +7,8 @@ class Song
     s.save
     s
   end
+  
+  def self.
 
   def self.all
     @@all

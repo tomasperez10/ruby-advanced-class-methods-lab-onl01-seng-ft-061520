@@ -20,6 +20,8 @@ class Song
     s.name = name_of_song
     s
   end
+  
+  def self.find_by_name
 
   def self.all
     @@all

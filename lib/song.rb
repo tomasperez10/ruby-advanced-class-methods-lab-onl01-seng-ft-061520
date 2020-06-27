@@ -29,7 +29,8 @@ class Song
     found_song = self.all.find {|i| i.name == name_of_song}
     if found_song == nil
       s = self.new
-      s.name = 
+      s.name = name_of_song
+      
   end
 
   def self.all

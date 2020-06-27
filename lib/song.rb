@@ -30,7 +30,9 @@ class Song
     if found_song == nil
       s = self.new
       s.name = name_of_song
-      
+      s.save
+      s
+    
   end
 
   def self.all
